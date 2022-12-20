@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    
+    <!-- This line causes problem. Remove it and everything works!-->
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.5.0" />
+    
+  </ItemGroup>
+
+</Project>
